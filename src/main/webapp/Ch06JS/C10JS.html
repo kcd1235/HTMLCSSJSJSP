@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+* {position:relative;top:0px;left:0px; max-width:1000px; margin:0px auto;}
+#d1 { width:30%; height:1000px; background:lightgray; float:left;} 
+#d2 { width:30%; height:1000px; background:skyblue; float:left; }
+#d3 { width:30%; height:1000px; background:orange; float:left; }
+ul { list-style:none; }
+li {border: 1px solid black; width:100px; height:30px; }
+</style>
+<script>
+	function addli1()
+	{
+		var ul1 = document.getElementById("u1")
+		var newli = document.createElement("li");
+		newli.innerHTML="TEST!";
+		ul1.appendChild(newli);
+	}
+	function addli2()
+	{
+		var ul2 = document.getElementById("u2")
+		var newli = document.createElement("li");
+		newli.innerHTML="TEST!";
+		ul2.appendChild(newli);
+	}
+	function addli3()
+	{
+		var ul3 = document.getElementById("u3")
+		var newli = document.createElement("li");
+		newli.innerHTML="TEST!";
+		ul3.appendChild(newli);
+	}
+	setInterval(addli1,1000);
+	setInterval(addli2,2000);
+	setInterval(addli3,3000);
+</script>
+</head>
+<body>
+
+<div id=d1><ul id=u1></ul></div>
+<div id=d2><ul id=u2></ul></div>
+<div id=d3><ul id=u3></ul></div>
+</body>
+</html>
+
+
+

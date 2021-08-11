@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	var answer = confirm("정보를 입력하시겠습니까?");
+	if(answer==true)
+	{
+		var name = prompt("이름 입력");
+		var kor = parseInt(prompt("국어 점수 입력"));
+		var mat = parseInt(prompt("수학 점수 입력"));
+		var eng = parseInt(prompt("영어 점수 입력"));
+		document.write("합계 :" + (kor + mat + eng));
+	}
+	else
+	{
+		alert("아니오 를 누르셨습니다");
+	}
+	
+
+</script>
+
+
+</body>
+</html>

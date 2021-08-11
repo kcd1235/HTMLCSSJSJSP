@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title> 입력양식 </title>  
+</head>
+<body>  
+
+회원기본정보
+<hr>
+<br>
+<form method="GET" action=MemberJoin.jsp>  
+<table border = 1 width=500px >
+<tr>
+	<td>아이디</td>
+	<td><input type="text" id="id" name="userid"> <a href="#"><button>중복확인</button></a></td>
+</tr>
+<tr>
+	<td>비밀번호</td>
+	<td><input type="password" id="pwd" name="pwd"></td>
+</tr>
+<tr>
+	<td>비밀번호확인</td>
+	<td><input type="password" id="pwcheck" name="pwcheck"></td>
+</tr>
+<tr>
+	<td>이름</td>
+	<td><input type="text" id="name" name="name"></td>
+</tr>
+<tr>
+	<td>휴대전화번호</td>
+	<td><input type="text" size=5px name="ph1"> - <input type="text" size=5px> - <input type="text" size=5px></td>
+</tr>
+<tr>
+	<td>일반전화</td>
+	<td><input type="text" size=5px> - <input type="text" size=5px> - <input type="text" size=5px></td>
+</tr>
+<tr>
+	<td>이메일</td>
+	<td><input type="text"></td>
+</tr>
+<tr>
+	<td>주소</td>
+	<td><input type="text">&nbsp;<a href="#"><button>주소찾기</button></a></td>
+</tr>
+<tr>
+	<td>수신여부</td>
+	<td><input type="checkbox" name="recv">SMS 수신 <input type="checkbox" name="recv">EMAIL 수신</td>
+</tr>
+
+</table>
+<br>
+<input type="submit" value=가입하기>
+<button>취소하기</button>
+
+</form>
+<body> 
+</body>
+</html>
+
+
+
+
+
+
+
+

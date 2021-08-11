@@ -1,0 +1,55 @@
+<!--  
+positon 속성값
+
+static	 	: 기본값 태그박스의 순서에 따라 순차적 위치 지정
+relative	: 상위 태그박스를 기준으로 상대적 위치 지정
+absoulte	: 상위 컨테이너박스를 기준으로 상대적 위치 지정
+fixed		: 현재 웹 브라우저 화면 공간 기준의 고정 위치 지정
+none		: 박스를 표시하지 않음 
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	#b1{background:red; width:200px; height:50px; }
+	#b2{background:orange; width:200px; height:50px;}
+	#b3{background:yellow; width:200px; height:50px;}
+	#b4{background:green; width:200px; height:50px;}
+	#b5{background:skyblue; width:200px; height:50px;}
+	#b6{background:blue; width:200px; height:50px;}
+	#b7{background:purple; width:200px; height:50px;}
+	#b8{background:pink; width:200px; height:50px;}
+	#b9{background:lavender; width:200px; height:50px;}
+	
+	#b3
+	{
+		position:absolute; top:20px;left:30px;
+	}
+	
+	#b8
+	{
+		position:absolute; top:40px;left:60px;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+
+<div id="b1">박스1</div>
+<div id="b2">박스2</div>
+<div id="b3">박스3</div>
+<div id="b4">박스4</div>
+<div id="b5">박스5</div>
+<div id="b6">박스6</div>
+<div id="b7">박스7</div>
+<div id="b8">박스8</div>
+<div id="b9">박스9</div>
+
+</body>
+</html>

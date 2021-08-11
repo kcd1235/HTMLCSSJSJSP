@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+	table
+	{
+		border:1px solid red;
+		width:500px;
+		border-collapse:separate;
+		border-spacing:0px 0px; 
+		empty-cells:hide;
+	}
+	td
+	{	text-align:center;
+		vertical-align :center;
+		height:100px;
+		border: 1px solid gray;
+		
+	}
+	/* tr:first-child
+	{
+		background:blue;
+	
+	} */
+	
+	
+
+</style>
+
+</head>
+<body>
+
+
+<table >
+	<tr>
+		<td>열이름1</td>
+		<td>열이름2</td>
+	</tr>
+	<tr>
+		<td>내용1</td>
+		<td rowspan="2">내용2</td>	
+	</tr>
+	<tr>
+		<td></td>
+		<!-- <td>내용4</td> -->	
+	</tr>
+	<tr>
+		<td>내용5</td>
+		<td></td>	
+	</tr>
+	<tr>
+		<td>푸터1</td>
+		<td>푸터2</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	str1 = "JAVASCRIPT";
+	str2 = "Web Programming";
+	str3 = "컴퓨터 개론";
+	str4 = "자료구조,데이터베이스,알고리즘,운영체제";
+	
+	document.write("str1 문자열 개수 : " + str1.length+"<br>");
+	document.write("str2 문자열 개수 : " + str2.length+"<br>");
+	document.write("str3 문자열 개수 : " + str3.length+"<br>");
+	document.write("str4 문자열 개수 : " + str4.length+"<br>");
+	document.write("toUppercase : " + str2.toUpperCase()+"<br>");
+	document.write("toLowercase : " + str1.toLowerCase()+"<br>");
+	str5 = str4.replace("데이터베이스","리눅스서버");
+	document.write(str5+"<br>");
+	list = str4.split(',');	// list = [자료구조,데이터베이스,알고리즘,운영체제];
+	for(var i=0;i<list.length;i++)
+	{
+		document.write(list[i] + "<br>");	
+	}
+	
+	
+	
+	
+</script>
+
+
+</body>
+</html>

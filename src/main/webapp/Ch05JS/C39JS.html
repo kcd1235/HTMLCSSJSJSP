@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function addbookInfo()
+	{
+		/*내용 입력된 태그요소 가져오기*/
+		var title = document.getElementById("t1");
+		var pub = document.getElementById("t2");
+		var amount = document.getElementById("t3");
+		var price = document.getElementById("t4");
+	
+		/*삽입 위치 요소 가져오기*/
+		var tbl = document.getElementById("tbl");
+		/*tr태그 추가*/
+		var trtag = document.createElement("tr");
+		/*td태그 추가*/
+		var td1 = document.createElement("td");
+		var td2 = document.createElement("td");
+		var td3 = document.createElement("td");
+		var td4 = document.createElement("td");
+		var td5 = document.createElement("td");
+		
+		/*입력된 값 Node로 적용*/
+		var tNode = document.createTextNode(title.value);
+		var pNode = document.createTextNode(pub.value);
+		var aNode = document.createTextNode(amount.value);
+		var prNode = document.createTextNode(price.value);
+		var tpNode = document.createTextNode(parseInt(amount.value)*parseInt(price.value));
+		
+		/*td태그에 Node추가 */
+		td1.appendChild(tNode);
+		td2.appendChild(pNode);
+		td3.appendChild(aNode);
+		td4.appendChild(prNode);
+		td5.appendChild(tpNode);
+		
+		/*tr태그에 td태그 추가*/
+		trtag.appendChild(td1);
+		trtag.appendChild(td2);
+		trtag.appendChild(td3);
+		trtag.appendChild(td4);
+		trtag.appendChild(td5);
+		
+		/*tbl태그에 tr태그 추가*/
+		tbl.appendChild(trtag);
+		
+		title.value="";
+		pub.value="";
+		amount.value="";
+		price.value="";
+	}
+
+
+</script>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>책제목</td>
+		<td><input type=text id=t1></td>
+	</tr>
+		<tr>
+		<td>출판사</td>
+		<td><input type=text id=t2></td>
+	</tr>
+	<tr>
+		<td>수량</td>
+		<td><input type=text id=t3></td>
+	</tr>
+	<tr>
+		<td>가격</td>
+		<td><input type=text id=t4></td>
+	</tr>
+	<tr>
+		<td>추가버튼</td>
+		<td><input type=button onclick="addbookInfo()" value="추가"></td>
+	</tr>
+</table>
+<hr>
+
+<table border=1 id=tbl>
+	<tr>
+		<td>책제목</td>
+		<td>출판사</td>
+		<td>수량</td>
+		<td>가격</td>
+		<td>총가격</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

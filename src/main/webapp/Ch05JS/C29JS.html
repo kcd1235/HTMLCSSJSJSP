@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+function tblcreate()
+{
+	var row=document.getElementById("rows").value;
+	var col=document.getElementById("cols").value;
+	var cnt=1;
+	document.write("<table border=1>");
+	for(var i=0;i<row;i++)
+	{
+		document.write("<tr>");
+		for(var j=0;j<col;j++)
+		{
+			document.write("<td>"+cnt+"</td>");
+			cnt++;
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+}
+</script>
+</head>
+<body>
+
+행 : <input type=text id=rows><br>
+열 : <input type=text id=cols><br>
+<input type=button onclick="tblcreate()" value="생성">
+
+</body>
+</html>

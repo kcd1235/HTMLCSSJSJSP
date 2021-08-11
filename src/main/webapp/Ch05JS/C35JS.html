@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	function buy(item,price,amount,callbackFunc)
+	{
+		console.log(item+" 상품을 " + amount + " 개 골라서 점원에게 전달");
+		setTimeout(function(){
+			console.log("계산이 필요합니다");
+			var total = price*amount;
+			callbackFunc(total);
+		},1000);
+		
+	}
+	function pay(tot)
+	{
+		console.log(tot + "원을 고객이 지불하였습니다.");	
+	}
+	var tot = buy("고구마",1000,5,pay);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	function buy_one(item,price,quantity)
+	{
+	    console.log(item + " 상품을 " + quantity + "개 골라서 점원에게 주었습니다.");
+	    setTimeout(function(){
+	    	console.log("계산이 필요합니다");
+	    	var total = price*quantity;
+		    return total;	
+	    }, 1000);
+	 	/* setTimeout(실행할작업,시간(ms)); 특정시간 이후에 작업을 수행 */
+	 	
+	 	
+	}
+	function pay(tot) {
+	    console.log(tot + "원을 지불하였습니다.");
+	}
+	var tot = buy_one("고구마", 1000, 5);
+	pay(tot);
+
+	
+</script>
+
+
+</body>
+</html>

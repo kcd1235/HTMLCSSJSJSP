@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var tmp  = confirm("개인정보 입력을 시작하겠습니까?");
+	if(tmp>0)
+	{
+		var name = prompt("당신의 이름은?");
+		var gender = prompt("당신의 성별은?");
+		var addr = prompt("당신의 주소는?");	
+		document.write("<table border=1>");
+		document.write("<caption>프로필</caption>");
+		document.write("<tr>");
+		document.write("<td>이름</td>");
+		document.write("<td>"+name+"</td>");
+		document.write("</tr>");
+		document.write("<tr>");
+		document.write("<td>성별</td>");
+		document.write("<td>"+gender+"</td>");
+		document.write("</tr>");
+		document.write("<tr>");
+		document.write("<td>주소</td>");
+		document.write("<td>"+addr+"</td>");
+		document.write("</tr>");
+		document.write("</table>");
+	}else
+	{
+		alert("취소하셨습니다");	
+	}
+</script>
+</body>
+</html>

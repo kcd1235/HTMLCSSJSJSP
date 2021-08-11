@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var a="gloA", b="gloB",c="gloc";
+	function f1()
+	{
+		var a="localA", b="localB";
+		document.write("a = " + a + "<br>");
+		document.write("b = " + b + "<br>");
+		document.write("a = " + this.a + "<br>");
+		document.write("c = " + c + "<br>");
+	}
+	f1();
+	document.write("<hr>");
+	document.write("a = " + a + "<br>");
+	document.write("b = " + b + "<br>");
+	document.write("a = " + this.a + "<br>");
+	document.write("c = " + c + "<br>");
+
+</script>
+
+
+</body>
+</html>

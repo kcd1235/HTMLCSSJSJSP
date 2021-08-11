@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+	ul {background:lightgray; }
+	li
+	{
+		display:inline-block;
+		width:150px;
+		text-align:center;
+		line-height:40px;	
+	}
+	
+	.Mainmenu
+	{
+		position:relative; top:0px; left:0px;
+		padding: 0px;
+	}
+	
+	.Submenu
+	{
+		position:absolute; top:40px; left:0px;
+		width:100%;
+		display:none;
+	}
+	li.Mainmenu:hover .Submenu
+	{
+		display:block;
+		background:skyblue;
+	}
+	
+	
+	
+	a
+	{
+		text-decoration:none;
+		color:black;
+		display:block;
+	}
+	a:hover
+	{
+		background:gray;
+	}
+	
+
+
+</style>
+
+
+</head>
+<body>
+
+<ul>
+	<li class=Mainmenu>
+	<a href="">Menu1</a>
+		<div class=Submenu>
+			<a href="#">Sub1</a>
+			<a href="#">Sub2</a>
+			<a href="#">Sub3</a>
+		</div>
+	</li>
+	
+	<li class=Mainmenu>
+	<a href="">Menu2</a>
+		<div class=Submenu>
+			<a href="#">Sub1</a>
+			<a href="#">Sub2</a>
+			<a href="#">Sub3</a>
+		</div>
+	</li>
+	<li class=Mainmenu>
+	<a href="">Menu3</a>
+		<div class=Submenu>
+			<a href="#">Sub1</a>
+			<a href="#">Sub2</a>
+			<a href="#">Sub3</a>
+		</div>
+	
+	</li>
+	<li class=Mainmenu>
+	<a href="">Menu4</a>
+		<div class=Submenu>
+			<a href="#">Sub1</a>
+			<a href="#">Sub2</a>
+			<a href="#">Sub3</a>
+		</div>
+	
+	</li>
+</ul>
+
+</body>
+</html>

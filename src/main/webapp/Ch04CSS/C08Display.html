@@ -1,0 +1,67 @@
+<!-- 
+Display 속성
+특정 박스유형(블록,인라인,인라인-블록)을 다른 박스유형으로 변경
+display 속성값
+none	박스출력 하지않음
+block	라인 단위 박스를 구성
+inline	한 라인 내의 일부분을 좌우 외부 여백과 내부 여백만 지정 가능한 박스로 구성
+		박스 속성들 중 margin-top/bottom,width,height 속성은 무시
+inline-block
+		한 라인 내의 일부분을 블록 박스로 구성
+		margin, padding, border , width, height 속성을 지정할 수 있다
+
+table
+table-cell
+			테이블 박스를 구성
+list-item	리스트 항목 박스를 구성
+		
+
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+	ul	
+	{
+		background:lightgray; width:200px;padding:0px;
+	}
+	a 
+	{
+		display:block; color:black; padding:10px 10px; 
+		text-decoration:none;text-align:center;
+	}
+	a:hover 
+	{
+		background:gray; color:white;
+	}
+	
+	
+</style>
+
+
+</head>
+<body>
+
+
+<ul>
+	<li><a href="#">오시는길</a></li>
+	<li><a href="#">회사연혁</a></li>
+	<li><a href="#">조직도</a></li>
+	<li><a href="#">영업시간</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

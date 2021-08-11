@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	var arr1 = [];
+	var tmp=0;
+	/*입력*/
+	for(var i=0;;i++)
+	{
+			tmp=prompt(i+" idx 삽입할 값 입력(-1:종료) : ");
+			if(tmp==parseInt(-1))
+				break;
+			arr1[i]=tmp;
+	}
+	/*출력*/
+	var sum=parseInt(arr1[0]);
+	var max=parseInt(arr1[0]);
+	var min=parseInt(arr1[0]);
+	var avg=0.0;
+	document.write(arr1[0]+" ");
+	for(var i=1;i<arr1.length;i++)
+	{
+		document.write(arr1[i]+" ");
+		
+		if(max<parseInt(arr1[i]))
+		{
+			max=parseInt(arr1[i]);
+		}
+		if(min>parseInt(arr1[i]))
+		{
+			min=parseInt(arr1[i]);
+		}
+		sum+=parseInt(arr1[i])
+	}
+	document.write("<br>");
+	document.write("<hr>");
+	document.write("최대 : " + max +"<br>");
+	document.write("최소 : " + min +"<br>");
+	document.write("합계 : " + sum + "<br>");
+	document.write("평균 : " + sum/arr1.length +"<br>");
+	document.write("<hr>");
+</script>
+
+
+
+</body>
+</html>

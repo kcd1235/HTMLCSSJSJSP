@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function cal1()
+	{
+		var n1 = Form1['t1'].value;
+		var n2 = Form1['t2'].value;
+		var sum =parseInt(n1) + parseInt(n2);
+		document.getElementById("t3").value=sum;
+	}
+</script>
+</head>
+<body>
+<form name=Form1>
+<input type=text name="t1">
+<input type=text name="t2">
+<input type=button onclick="cal1()" value="클릭"><br>
+</form>
+<hr>
+결과 : <input type=text id=t3>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	var obj = new Object();
+	alert(typeof obj);
+	obj.name="홍길동"; 
+	obj.addr="대구";
+	alert(obj.name);
+	alert(obj.addr);
+	alert(obj.constructor);
+	alert(obj.toString());
+	
+	//toString() 재정의
+	obj.toString = function()
+	{
+		document.write(this.name +"," + this.addr+"<br>");
+	}
+	obj.toString();
+	
+	
+	
+	
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function result1()
+	{
+		var name=Form1['StdName'].value;
+		var n1 =parseInt(Form1['num1'].value);
+		var n2 =parseInt(Form1['num2'].value);
+		var sum = n1 + n2;
+		document.getElementById("r1").value=sum;
+		
+	}
+</script>
+
+</head>
+<body>
+<form name="Form1">
+이름 : <input type="text" name="StdName"><br>
+숫자 : <input type="text" name="num1">&nbsp;
+숫자 : <input type="text" name="num2"><br>
+<button onclick="result1()">확인</button>
+</form>
+결과 : <input type="text" id="r1"><br>
+<hr>
+
+ 
+</body>
+
+
+
+
+</html>

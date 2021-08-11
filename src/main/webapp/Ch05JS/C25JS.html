@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	var arr1 = [];
+	var tmp=0;
+	for(var i=0;i<5;i++)
+	{
+			tmp=prompt(i+" idx 삽입할 값 입력 : ");
+			arr1[i]=tmp;
+	}
+	var sum=0;
+	for(var i=0;i<5;i++)
+	{
+		document.write(arr1[i]+" ");
+		sum+=parseInt(arr1[i])
+	}
+	document.write("<br>");
+	document.write("합계 : " + sum+"<br>");
+	document.write("<hr>");
+</script>
+
+
+
+</body>
+</html>

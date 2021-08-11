@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body onLoad="b7()">
+<script>
+	function b1()
+	{
+		win1=window.open();
+	}
+	function b2()
+	{
+		win2=window.open("http://www.naver.com");
+	}
+	function b3()
+	{
+		option="width=300,height=300";
+		win3=window.open("","Naver",option);
+	}
+	function b4()
+	{
+		option="width=300,height=300,top=100,left=100";
+		win4=window.open("","Naver",option);
+	}
+	function b5()
+	{
+		option="width=300,height=300,top=100,left=100,menubar=no,status=no";
+		win5=window.open("","Naver",option);
+	}
+	function b6()
+	{
+		option="width=300,height=300,top=100,left=100,menubar=no,status=no,location=no,toolbar=no";
+		win6=window.open("","Naver",option);
+	}
+	function b7()
+	{
+		option="width=700,height=500,top=100,left=100,menubar=no,status=no, location=no ,toolbar=no,resizable=no,fullscreen=no";
+		win7=window.open("ToDo.html","TodoList",option);
+	}
+	function b8(){}
+</script>
+
+<button onclick="b1()">버튼1</button>
+<button onclick="b2()">버튼2</button>
+<button onclick="b3()">버튼3</button>
+<button onclick="b4()">버튼4</button>
+<button onclick="b5()">버튼5</button>
+<button onclick="b6()">버튼6</button>
+<button onclick="b7()">버튼7</button>
+<button onclick="b8()">버튼8</button>
+</body>
+</html>

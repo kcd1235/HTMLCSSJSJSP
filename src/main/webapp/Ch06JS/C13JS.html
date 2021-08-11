@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	function newTag()
+	{
+		var oldtag = document.getElementById("li1");	//이전태그
+		var newtag = document.createElement("li");		//New태그
+		newtag.innerHTML="NEW 태그";
+		newtag.id="li1";
+		var partag = oldtag.parentNode;		//부모 태그
+		partag.replaceChild(newtag,oldtag);	//태그 교체
+	}
+	function oldTag()
+	{
+		var oldtag = document.getElementById("li1");	//이전태그
+		var newtag = document.createElement("li");		//New태그
+		newtag.innerHTML="원본태그";
+		newtag.id="li1";
+		var partag = oldtag.parentNode;		 //부모 태그
+		partag.replaceChild(newtag,oldtag);	 //태그 교체
+	}
+	function rmTag()
+	{
+		var rmtag = document.getElementById("li1");
+		rmtag.parentNode.removeChild();
+	}
+	function addCss()
+	{
+		var tar = document.getElementById("li1");
+		tar.style.background="gray";
+		tar.style.color="white";
+	}
+</script>
+<button onclick="newTag()">태그교체</button> <button onclick="oldTag()">태그복원</button>
+<button onclick="rmTag()">태그삭제</button>
+<button onclick="addCss()">스타일변경</button>
+<hr>
+<ul>
+	<li id=li1>원본태그</li>
+	<li id=li1>원본태그</li>
+	<li id=li1>원본태그</li>
+</ul>
+
+
+</body>
+</html>

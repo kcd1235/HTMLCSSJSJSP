@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function keyF1()
+{
+	var keycode = event.keyCode;	
+	document.getElementById("t1").innerHTML=keycode;
+}
+function keyF2()
+{
+	var keycode = event.keyCode;	
+	document.getElementById("t2").innerHTML=keycode;	
+}
+function keyF3()
+{
+	var keycode = event.keyCode;	
+	document.getElementById("t3").innerHTML=keycode;
+}
+
+</script>
+
+</head>
+<body>
+<h1>KEY 이벤트 처리</h1>
+
+<!--  
+	onkeydown	: 키보드 눌렀을때 영문은 대문자처리
+	onkeyup		: 키보드 눌렀다가 뗏을때 
+	onkeypress  : 키보드 눌렀을때 대소문자 구별처리, ASCII로만 적용
+-->
+
+<h3>ONkeyDown</h3>
+<input type=text onkeydown=keyF1(this)><br>
+<div id=t1></div><br><br>
+<h3>ONkeyUP</h3>
+<input type=text onkeyup=keyF2(this)><br>
+<div id=t2></div><br><br>
+<h3>ONkeyPress</h3>
+<input type=text onkeypress=keyF3(this)><br>
+<div id=t3></div><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

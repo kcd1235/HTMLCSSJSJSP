@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	시멘틱 태그 : HTML 문서의 구조적인 의미(머리,메뉴,본문,보조,꼬리말)을 나타내는 태그
+	시멘틱 태그를 통해서 문서 전체를 세부적으로 구분하여 페이지 내 탐색을 빠르게 처리할 수 있다
+	<header>	문서 시작(머리말)부분
+	<nav>		문서 메인메뉴 부분
+	<aside>		부 메뉴 표시부분
+	<article>	문서 내용의 부분(대분류)
+	<section>	문서 내용의 부분(소분류)
+	<footer>	문서의 마지막 부분 
+	tthread 	표의 헤더
+	tbody		표의 내용
+	tfoot		표의 footer
+	caption		표의 제목
+ -->
+ <hr>
+ <h2>Table 시멘틱 구조 구분</h2>
+ <hr>
+ 
+ <style>
+ 	table {border-collapse: collapse;}
+ 	caption {margin : 10px; font-size:20px; font-family:"나눔고딕";}
+ 	thead {background:red; color:white;}
+ 	tfoot {background:blue; color:white;}
+ </style>
+ 
+ 
+ <table border = 1 width=500>
+ 	<caption>테이블 제목</caption>
+ 	<thead>
+ 	<tr>
+ 		<th>열이름1</th>
+ 		<th>열이름2</th>
+ 		<th>열이름3</th>
+ 	</tr>
+ 	</thead>
+	<tfoot>
+ 	<tr>
+ 		<td>푸터1</td>
+ 		<td>푸터2</td>
+ 		<td>푸터3</td>
+ 	</tr>
+ 	</tfoot>
+ 	<tbody>
+	<tr>
+		<td>내용1</td>
+		<td>내용2</td>
+		<td>내용3</td>
+	</tr>
+	<tr>
+		<td>내용1</td>
+		<td>내용2</td>
+		<td>내용3</td>
+	</tr>
+	</tbody>
+ </table>
+
+
+
+
+
+</body>
+</html>

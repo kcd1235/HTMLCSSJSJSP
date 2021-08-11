@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<style>
+		.c1 { background:gray; color:white; width:200px;height:30px; margin:10px;}
+		.c2 { background:lightgray; color:white; width:200px;height:30px; margin:10px;}
+		.c3 {background:black; color:white; width:200px;height:30px; margin:10px;}
+		.c4 {background:skyblue; color:white; width:200px;height:30px; margin:10px;}
+	</style>
+	<div class=c1></div>
+	<div class=c2></div>
+	<div class=c3></div>
+	<div class=c4></div>
+	<div class=c1></div>
+	<div class=c4></div>
+	<div class=c3></div>
+	<div class=c2></div>
+	<div class=c1></div>
+	<script>
+		var c1 = document.getElementsByClassName("c1");
+		alert(c1.length);
+/* 		c1[0].innerHTML="클래스 1영역 값추가";		
+		c1[1].innerHTML="클래스 1영역 값추가";
+		c1[2].innerHTML="클래스 1영역 값추가"; */
+		for(i=0;i<c1.length;i++)
+		{
+			c1[i].innerHTML="클래스 1영역 값 추가";
+		}
+	</script>
+
+</body>
+</html>
+
+
+
+

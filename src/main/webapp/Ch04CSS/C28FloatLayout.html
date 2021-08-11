@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+
+<style>
+	body	{ height:2000px; width:1900px; }
+	header	{ margin:5px; height:5%;}
+	nav		{ margin:5px; height:3%;}
+	aside	{ margin:5px; height:100%; width:15%; }
+	section	{ background: lightgray; margin:5px; height:30%; width:83%;}
+	footer	{ background: lightgray; margin:5px; height:10%;}
+	aside {float:left; }
+	section { float:left; left:100px;}
+	footer {clear:both; }
+	
+	header { font-size:18px; }
+	header img { float:left; border:1px solid black; width:300px;height:80px}
+	header ul {position:absolute;  top:30px; right:20px;
+		 
+	}
+	header li {display:inline-block; }
+	header a { text-decoration:none; color:black;}
+	
+	
+	
+	
+	nav  {padding:0px;margin:0px;}
+	#menu
+	{	
+		text-align:center;
+		font-size:25px;  font-size:30px;	 
+		margin:10px;height:50px;	
+		position:relative; 
+		border:1px solid black;
+	}
+	#menu > li 
+	{  
+		display:inline-block;
+		/* 	float:left; */ 
+		width:150px;
+		list-style:none;	 
+		margin:0px 30px;
+		border:1px solid gray;
+		
+	}
+	#menu > li a {color:black; text-decoration:none; }
+	
+	#submenu  
+	{
+		text-align:center;
+		background:gray;
+		padding:0px; margin:0px;
+		
+	}
+	#submenu ul
+	{
+		position:absolute; top:50px; left:0px;
+		text-align:center;
+		
+	}
+	#submenu li
+	{
+		width:100%;
+		border:1px solid black;
+		display:none;	
+	}
+	
+	#menu:hover #submenu li
+	{
+		display:block;
+	}
+	
+	
+
+
+	aside { }
+	#aside	{ font-size:20px; width:100%; 
+				list-style:none;padding:0px;text-align:center;
+				line-height:60px;
+				}
+	
+	#aside a 	
+	{ 
+		display: block; text-decoration:none; color:black; 
+		height:60px;border:1px solid lightgray; margin:0px 0px; 
+		
+	}				
+	#sh a
+	{
+		background: #0B0B3B;
+		color: white;
+	}
+</style>
+
+</head>
+<body>
+
+<header>
+<img src="" alt="로고이미지"> 
+<ul>
+	<li><a href="#">회원가입</a>&nbsp;&nbsp;|</li>
+	<li>&nbsp;&nbsp;<a href="#">로그인</a>&nbsp;&nbsp;|</li>
+	<li>&nbsp;&nbsp;<a href="#">장바구니</a>&nbsp;&nbsp;|</li>
+	<li>&nbsp;&nbsp;<a href="#">내강의실</a></li>
+</ul>
+</header>
+
+<nav>
+	<ul id=menu>
+		<li>
+		<a href="#">Menu1</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu2</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu3</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu4</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu5</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu6</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Menu7</a>
+			<ul id=submenu>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+				<li><a href="#">Sub1</a></li>
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+
+<aside>
+	<ul id=aside>
+		<li id=sh><a href="#">상단제목</a></li>
+		<li><a href="#">Cat2</a></li>
+		<li><a href="#">Cat3</a></li>
+		<li><a href="#">Cat4</a></li>
+		<li><a href="#">Cat5</a></li>
+		<li><a href="#">Cat6</a></li>
+	</ul>
+	
+</aside>
+
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<footer>
+</footer>
+
+
+</body>
+</html>

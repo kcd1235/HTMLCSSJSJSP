@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+* {font-size:30px;}
+</style>
+<script>
+	function cal()
+	{
+		var name=Name.value;
+		var w=parseFloat(weight.value);
+		var h=parseFloat(height.value);
+		var BMI = (w / (h*h))*10000;
+		var result;
+		if(BMI<=23)
+		{
+			result="정상";	
+		}
+		else if(BMI<=25)
+		{
+			result="과체중";
+		}
+		else if(BMI<=30)
+		{
+			result="비만";
+		}
+		else
+		{
+			result="고도비만";
+		}
+		alert(BMI +" " + result);		
+		
+		document.getElementById("n").innerHTML = name;
+		document.getElementById("BMI").innerHTML = BMI;
+		document.getElementById("r").innerHTML = result;
+		
+	}
+	
+</script>
+<h1>비만도 확인</h1>
+<table border=1>
+	<tr>	
+		<td>이름</td>
+		<td><input type=text id="Name"></td>
+	</tr>
+	<tr>
+		<td>몸무게</td>
+		<td><input type=text id="weight"></td>
+	</tr>
+	<tr>
+		<td>신장</td>
+		<td><input type=text id="height"></td>
+	</tr>
+	<tr>
+	<td colspan=2><input type=button onclick="cal()" value="TEST"></td>	
+	</tr>
+</table>
+<hr>
+이름 :<div id=n></div>
+<br>
+BMI :<div id=BMI></div>
+<br>
+결과 :<div id=r></div>
+
+
+
+
+</body>
+</html>

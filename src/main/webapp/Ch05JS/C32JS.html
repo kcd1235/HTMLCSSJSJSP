@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	/*익명함수*/
+	var func=function(){document.write("Anonymous Function Call!<br>");}
+	
+	/*콜백함수*/
+	function TEST(n, F)/*F 매개변수는 함수를 받는 매개변수  */
+	{
+		document.write("콜백함수를 " + n + " 번 호출함! <br>");
+		for(var i=0;i<5;i++)
+			F();	//매개변수로 받은 함수 실행
+	}
+	TEST(5,function(){document.write("Anonymous Function Call!<br>");})
+	
+
+
+</script>
+
+
+</body>
+</html>

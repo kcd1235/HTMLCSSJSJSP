@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<fieldset>
+	<legend>근속정보 확인</legend>
+	입사날짜 : <input type=date id=hired><br>
+	<input type=button onclick="cal()" value="계산하기"><br>
+</fieldset>
+<hr>
+<fieldset>
+	<table >
+		<tr>	
+			<td>근속 년수</td>
+			<td id=t1></td>
+		</tr>
+		<tr>
+			<td>근속 월수</td>
+			<td id=t2></td>
+		</tr>
+		<tr>
+			<td>근속 일수</td>
+			<td id=t3></td>
+		</tr>
+	</table>
+</fieldset>
+
+
+<script>
+	function cal()
+	{
+		var indate = document.getElementById("hired").value; //달력에서 선택날짜
+		var 날수 = new Date() - new Date(indate);//현재날짜-입력된날짜
+		
+		/*하루 24시간을 밀리초로 반환*/
+		var 하루초 = 24 * 60 * 60 * 1000;
+		
+		/*일수계산*/
+		var diffday = parseInt(날수 / 하루초 );
+	 
+		/*월수계산*/
+		var diffmonth = parseInt(날수 / (하루초*30))
+		 
+		/*년수계산*/
+		var diffyear = parseInt(날수 / (하루초*30*12))
+	 		
+		document.getElementById("t1").innerHTML = diffyear;
+		document.getElementById("t2").innerHTML = diffmonth;
+		document.getElementById("t3").innerHTML = diffday;
+		
+		
+	}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

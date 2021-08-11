@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	function welcome()
+	{
+		document.getElementById("t1").innerHTML="자바스크립트를 시작합니다!"
+		document.getElementById("t1").style.color="red";
+	}
+	function clearTest()
+	{
+		document.getElementById("t1").innerHTML=""
+
+	}
+	
+</script>
+</head>
+<body>
+	<button onclick="welcome();">Start JS</button>
+	<button onclick="clearTest();"> Clear</button>
+	
+	<div id="t1"></div>
+
+</body>
+</html>

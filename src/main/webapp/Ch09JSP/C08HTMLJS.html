@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	function JSFunc()
+	{
+		document.FORM1.submit();
+	}
+	function Popup()
+	{
+		window.open("","Popup","width=500,height=500");
+		form=document.FORM1;
+		form.target="Popup";
+		form.action="C08JSP.jsp";
+		form.submit();
+	}
+</script>
+
+<form name=FORM1 method=get action=C08JSP.jsp> 
+	이름 : <input type=text name="name"><br>
+	나이 : <input type=text name="age"><br><br>
+	<input type=button onclick="JSFunc()" value="JSP로 넘기기"><br>
+	<input type=button onclick="Popup()" value="POP창으로 넘기기"><br>
+
+</form>
+
+</body>
+</html>

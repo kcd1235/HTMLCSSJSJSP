@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form>
+	<input type=text name="t1">
+	<input type=text name="t2">
+</form>
+<form>
+	<input type=text name="t3">
+	<input type=text name="t4">
+</form>
+
+<form name=Form3>
+	<input type=text name="t5">
+	<input type=text name="t6">
+</form>
+
+<form>
+	<input type=text>
+	<input type=text>
+	<input type=text>
+</form>
+<script>
+	document.forms[0].t1.value="TEST1";
+	document.forms[0].t2.value="TEST2";
+	document.forms[1].t3.value="TEST3";
+	document.forms[1].t4.value="TEST4";
+	document.Form3.t5.value="TEST5";
+	document.Form3.t6.value="TEST6";
+	document.forms[3].elements[0].value="TEST7";
+	document.forms[3].elements[1].value="TEST8";
+	document.forms[3].elements[2].value="TEST9";
+	
+</script>
+
+
+</body>
+</html>

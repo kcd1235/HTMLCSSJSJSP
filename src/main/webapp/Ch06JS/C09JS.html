@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+현재시간 : <p id="clock"> </p>&nbsp;
+<button onclick="">멈추기</button>
+
+<div id ="t1"></div>
+
+<script>
+	function curTime()
+	{
+		var cdate = new Date();
+		document.getElementById("clock").innerHTML=cdate.toLocaleTimeString();
+	}
+	i=0
+	function test()
+	{
+		var div = document.getElementById("t1");
+		var node = document.createElement("p");
+		node.innerHTML="TEST"
+		div.appendChild(node);
+
+	}
+	setInterval(test,3000);
+	setInterval(curTime,1000);
+	
+	
+</script>
+
+</body>
+</html>

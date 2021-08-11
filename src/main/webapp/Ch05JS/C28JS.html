@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var std = 
+	[
+		["홍길동","컴공",20,"대구"],
+		["남길동","기계",25,"울산"],
+		["서길동","수학",30,"서울"],
+		["동길동","영어",45,"대전"],
+		["북길동","프랑스",45,"대전","영화보기"]
+	]
+	document.write("배열길이 : " + std.length+"<br>");
+	document.write("0 번째 행길이 : " + std[0].length+"<br>");
+	document.write("1 번째 행길이 : " + std[1].length+"<br>");
+	document.write("2 번째 행길이 : " + std[2].length+"<br>");
+	document.write("3 번째 행길이 : " + std[3].length+"<br>");
+	document.write("4 번째 행길이 : " + std[4].length+"<br>");
+	document.write("<hr>");
+	
+	document.write("<table border=1>");
+	document.write("<tr>");
+	document.write("<td>이름</td>");
+	document.write("<td>전공</td>");
+	document.write("<td>나이</td>");
+	document.write("<td>주소</td>");
+	document.write("<td>취미</td>");
+	document.write("</tr>");
+	for(var i=0;i<std.length;i++)
+	{
+		document.write("<tr>");
+		for(var j=0;j<std[i].length;j++)
+		{
+			document.write("<td>"+std[i][j]+"</td>");
+		}
+		document.write("<tr>");
+	}
+	
+	document.write("");
+	document.write("");
+	document.write("");
+	document.write("");
+	document.write("</table>");
+	
+		</script>
+</body>
+</html>
+
+
+

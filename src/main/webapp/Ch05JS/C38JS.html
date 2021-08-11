@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	function Person(name,age,addr,gender)
+	{
+		/*멤버변수*/
+		this.name = name;
+		this.age = age;
+		this.addr = addr;
+		this.gender = gender;
+		/*기능추가*/
+		this.talk = function(){ document.write(this.name+" 이 말합니다");}
+		this.showInfo =function()
+		{
+			document.write("이름 : " + this.name+"<br>");
+			document.write("나이 : " + this.age+"<br>");
+			document.write("주소 : " + this.addr+"<br>");
+			document.write("성별 : " + this.gender+"<br>");
+		}	
+	}
+
+	var kim = new Person("김수민",30,"대구","여");
+	document.write("이름 : " + kim.name+"<br>");
+	document.write("나이 : " + kim.age+"<br>");
+	document.write("주소 : " + kim.addr+"<br>");
+	document.write("성별 : " + kim.gender+"<br>");
+	document.write("<hr>");
+	kim.talk(); document.write("<br>");
+	kim.showInfo();
+	document.write("<hr>");
+	var Lee = new Person("이수근",40,"서울","남");
+	Lee.showInfo();
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

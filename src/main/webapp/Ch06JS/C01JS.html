@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+	var curDate = new Date();
+	
+	document.write("연도 : " + curDate.getFullYear()+"<br>");
+	document.write("월 : " + (curDate.getMonth()+1)+"<br>");
+	document.write("일 : " + curDate.getDate() + "<br>");
+	document.write("요일 :" + curDate.getDay() + "<br>");
+	/*0 -6 : 일(0) 월(1) 화(2) 수(3) 목(4) 금(5) 토(6)  */
+	var day=curDate.getDay();
+	var day2;
+	switch(day)
+	{
+		case 0: 
+			day2="일"; break;
+		case 1:
+			day2="월"; break;
+		case 2:
+			day2="화"; break;
+		case 3:
+			day2="수"; break;
+		case 4:
+			day2="목"; break;
+		case 5:
+			day2="금"; break;
+		case 6:
+			day2="토"; break;
+	}
+	document.write("현재요일 : " + day2+"<br>");
+	document.write("Hour : " + curDate.getHours()+"<br>");
+	document.write("Minute : " + curDate.getMinutes()+"<br>");
+	document.write("Second : " + curDate.getSeconds());
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

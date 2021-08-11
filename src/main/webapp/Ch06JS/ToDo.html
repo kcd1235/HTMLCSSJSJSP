@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	table 
+	{ 
+	width:500px; margin: 100px auto;
+	border:1px solid gray; font-size:20px; font-family:"맑은 고딕";
+	}
+	td
+	{
+		border :1px solid gray;
+		height:30px;
+		line-height:30px ;
+	}
+	caption 
+	{
+		margin:10px auto; background:skyblue; color:white; font-size:30px;
+	}
+	input { border:0px ;}
+	input[type='text'] { width:400px; height:30px; margin-right:15px; }
+	input[type='button'] { width:70px; height:30px; background:lightgray; }
+</style>
+
+<script>
+	function addList()
+	{
+		/* 입력한 리스트 내용을 노드화  */
+		var list = document.getElementById("do");
+		var Node = document.createTextNode(list.value);
+		
+		/* 태그 생성*/
+		var trtag = document.createElement("tr");
+		var tdtag = document.createElement("td");
+		var chktag = document.createElement("input");
+		chktag.setAttribute("type","checkbox");
+		chktag.setAttribute("onclick","ChkF(this)");
+		
+		/* 테이블 연결 위한 요소가져오기  */
+		if(list.value!="")	/* 빈문자열이 아니라면 노드 추가작업 진행 */
+		{
+			var tbl = document.getElementById("tbl");
+		
+			/*요소 간 연결*/
+			tdtag.appendChild(chktag);
+			tdtag.appendChild(Node);
+			trtag.appendChild(tdtag);
+			tbl.appendChild(trtag);
+			
+			list.value="";
+		}
+	}
+	
+	function ChkF(box)
+	{
+		if(box.checked==true)
+		{
+			var td = box.parentNode;
+			td.style.background="lightgray";
+			td.style.color="white";
+			td.style.textDecoration="line-through";
+			td.style.textDecorationColor="black";
+		}
+		else
+		{
+			var td = box.parentNode;
+			td.style.background="white";
+			td.style.color="black";
+			td.style.textDecoration="none";
+			
+		}
+		
+	}
+	
+	
+</script>
+</head>
+<body>
+
+<table id=tbl >
+	<caption id=title>TO DO LIST</caption>
+	<tr>
+		<td>
+		<input type="text" id=do><input type=button onclick="addList()" value="추가">
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
